@@ -1,13 +1,23 @@
-# Sessions
+## Create sessions
 
-### Create sessions
+```bash
+tmux new                      # Create a new tmux session
+```
 
-tmux new
-tmux new-session name-session
-tmux new -s name-session <!-- Shortcut for new-session -->
+```bash
+tmux new-session name-session # Create a named session
+```
 
-### Detaching and attaching sessions
+```bash
+tmux new -s name-session      # Shortcut for new-session
+```
 
-tmux attach  <!-- Attach to the most recently used session-->
-tmux attach -t name-session <!-- Choose a session -->
+## Detaching and attaching sessions
 
+```bash
+tmux attach                   # Attach to most recent session
+```
+
+```bash
+tmux attach -t name-session   # Attach to a specific session
+```
